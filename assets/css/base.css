@@ -1,13 +1,18 @@
 :root {
     --primary        : #021A84;
     --second         : #FE4C4C;
+    --dark-primary   : #010d42;
     --text           : #171717;
+    --light-green    : #58d282;
     --gray           : #999999;
-    --light-gray     : #E5E5E5;
-    --backgroud      : #E5E5E5;
-    --green-text     : #2ADA66;
-    --blue-text      : #021A84;
-    --red-text       : #E5532A;
+    --light-gray     : #e5e5e5;
+    --background     : #F2F2F2;
+    --green-text     : #197037;
+    --green-desc-text: #156d33;
+    --purple-text    : #010d42;
+    --red-text       : #e5532a;
+    --red-desc-text  : #d04c26;
+
     --green-gradient : linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #2ADA66;
     --purple-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #021A84;
     --red-gradient   : linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #E5532A;
@@ -17,7 +22,7 @@ html,
 body {
     font-family     : 'Inter', sans-serif;
     font-size       : 14px;
-    background-color: var(--backgroud);
+    background-color: var(--background);
 }
 
 .wrapper {
@@ -52,6 +57,7 @@ body {
 }
 
 .btn--solid {
+    display         : block;
     color           : white;
     background-color: var(--primary);
     border-radius   : 8px;
@@ -83,3 +89,9 @@ body {
 }
 
 /* End button */
+
+.heading {
+    font-size  : 34px;
+    font-weight: 700;
+    color      : var(--dark-primary);
+}

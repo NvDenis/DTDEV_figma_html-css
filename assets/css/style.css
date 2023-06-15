@@ -129,3 +129,530 @@
 }
 
 /* end suggest-wrap */
+
+
+/* job list */
+
+.job-wrapper {
+    margin-top: 77px;
+}
+
+.job-header {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.job-heading {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 9px;
+}
+
+.job-iconWrap {
+    width          : 67px;
+    height         : 67px;
+    border-radius  : 50%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : rgba(255, 255, 255, 0.4);
+    box-shadow     : 0px 12.3421px 30px rgba(0, 0, 0, 0.08);
+}
+
+.job-icon {
+    width          : 52.89px;
+    height         : 52.89px;
+    background     : #FFFFFF;
+    border-radius  : 50%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.job-header__link {
+    font-weight: 500;
+    font-size  : 18px;
+    color      : var(--primary);
+    cursor     : pointer;
+    transition : linear .2s;
+}
+
+.job-header__link:hover {
+    text-decoration: underline;
+}
+
+
+/* end job list */
+
+/* job-card__list */
+
+.job-card__list {
+    margin-top           : 40px;
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 32px;
+}
+
+.job-card__item {
+    border-radius   : 16px;
+    background-color: #fff;
+    padding         : 16px;
+    border          : 1px solid transparent;
+    transition      : linear .2s;
+}
+
+.job-card__item:hover {
+    border-color: var(--primary);
+}
+
+.job-card__header {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding-bottom : 8px;
+    border-bottom  : 1px solid var(--light-gray);
+
+}
+
+.job-card__heading {
+    display: flex;
+    gap    : 8px;
+}
+
+.job-card__img {}
+
+.job-card__name {
+    font-size  : 16px;
+    font-weight: 500;
+}
+
+.job-card__time {
+    padding      : 4px 16px;
+    background   : linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #021A84;
+    border-radius: 8px;
+    cursor       : pointer;
+    color        : var(--primary);
+}
+
+.job-card__body {
+    margin-top     : 8px;
+    display        : flex;
+    justify-content: space-between;
+    position       : relative;
+}
+
+.job-card__body::before {
+    content         : "";
+    display         : block;
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    width           : 1px;
+    height          : 16px;
+    background-color: var(--light-gray);
+}
+
+.job-card__priceItem {}
+
+.job-card__priceText {
+    color    : var(--dark-primayr);
+    font-size: 12px;
+}
+
+.job-card__priceNumber {
+    font-weight: 700;
+    font-size  : 14px;
+    line-height: 20px;
+    margin-top : 4px;
+}
+
+.job-card__priceNumber span {
+    color      : var(--gray);
+    font-weight: 400;
+}
+
+
+.job-card__footer {
+    margin-top     : 8px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.job-card__footerLeft {
+    display    : flex;
+    align-items: center;
+    gap        : 16px;
+}
+
+.job-card__tag {
+    padding         : 4px 16px;
+    border-radius   : 8px;
+    background-color: var(--background);
+    color           : var(--dark-primary);
+}
+
+.job-card__footerRight {
+    padding         : 4px 16px;
+    border-radius   : 8px;
+    background-color: var(--second);
+    color           : white;
+    font-size       : 12px;
+    display         : flex;
+    align-items     : center;
+}
+
+
+/* end job-card__list */
+
+/* Introduce */
+.intro-wrapper {
+    margin-top: 80px;
+}
+
+.heading-wrapper {
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 18px;
+    color    : var(--primary);
+
+}
+
+.intro-card__list {
+    margin-top: 40px;
+    display   : flex;
+    gap       : 32px;
+}
+
+.intro-card__item {
+    padding      : 32px;
+    background   : var(--green-gradient);
+    border-radius: 16px;
+}
+
+.intro-card__item:nth-child(1) {
+    background: var(--green-gradient);
+}
+
+.intro-card__item:nth-child(1) .intro-card__title {
+    margin-top   : 16px;
+    color        : var(--green-text);
+    text-align   : center;
+    font-weight  : 700;
+    font-size    : 18px;
+    line-height  : 28px;
+    margin-bottom: 8px;
+}
+
+.intro-card__item:nth-child(1) .intro-card__desc {
+    color      : var(--green-desc-text);
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+    text-align : center;
+}
+
+.intro-card__item:nth-child(2) {
+    background: var(--purple-gradient);
+}
+
+.intro-card__item:nth-child(2) .intro-card__title {
+    margin-top   : 16px;
+    color        : var(--dark-primary);
+    text-align   : center;
+    font-weight  : 700;
+    font-size    : 18px;
+    line-height  : 28px;
+    margin-bottom: 8px;
+}
+
+.intro-card__item:nth-child(2) .intro-card__desc {
+    color      : var(--dark-primary);
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+    text-align : center;
+}
+
+.intro-card__item:nth-child(3) {
+    background: var(--red-gradient);
+}
+
+
+.intro-card__item:nth-child(3) .intro-card__title {
+    margin-top   : 16px;
+    color        : var(--red-text);
+    text-align   : center;
+    font-weight  : 700;
+    font-size    : 18px;
+    line-height  : 28px;
+    margin-bottom: 8px;
+}
+
+.intro-card__item:nth-child(3) .intro-card__desc {
+    color      : var(--red-desc-text);
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+    text-align : center;
+}
+
+
+.intro-card__img {
+    margin-inline: auto;
+}
+
+
+/* end Introduce */
+
+/* partner */
+.partner-wrapper {
+    margin-top: 80px;
+}
+
+.partner-wrapper .heading {
+    text-align: center;
+}
+
+.partner__list {
+    margin-top     : 40px;
+    display        : flex;
+    gap            : 60px;
+    justify-content: center;
+}
+
+/* end partner */
+
+/* process */
+.process-wrapper {
+    margin-top: 80px;
+
+}
+
+.process-card__list {
+    margin-top     : 40px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.process-card__item {
+    text-align: center;
+    flex      : 1;
+}
+
+.process-card__numberWrap {
+    padding        : 4px;
+    border-radius  : 50%;
+    width          : 32px;
+    height         : 32px;
+    background     : #FFFFFF;
+    margin         : 0 auto;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 16px;
+}
+
+.process-card__number {
+    border-radius  : 50%;
+    width          : 24px;
+    height         : 24px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : var(--gray);
+    color          : white;
+    font-size      : 18px;
+    font-weight    : 700;
+}
+
+.process-card__img {
+    margin-inline: auto;
+    margin-bottom: 16px;
+}
+
+.process-card__title {
+    font-weight  : 700;
+    font-size    : 18px;
+    color        : var(--text);
+    margin-bottom: 8px;
+}
+
+.process-card__desc {
+    font-weight: 400;
+    font-size  : 14px;
+}
+
+/* end process */
+
+/* subBanner__wrap */
+.subBanner__wrap {
+    margin-top   : 114px;
+    display      : flex;
+    border-radius: 20px;
+    overflow     : hidden;
+    background   : linear-gradient(220.53deg, #0CC64B 0%, #26AB5B 76.95%);
+
+}
+
+.subBanner__left {
+    padding    : 26px 40px;
+    flex       : 1;
+    display    : flex;
+    align-items: center;
+    gap        : 16px;
+    color      : white;
+
+}
+
+.subBanner__title {
+    font-size  : 26px;
+    font-weight: 700;
+}
+
+.subBanner__desc {
+    font-size  : 18px;
+    font-weight: 400;
+
+}
+
+.subBanner__content {}
+
+.subBanner__right {
+    width      : 233px;
+    padding    : 26px 40px;
+    display    : flex;
+    align-items: center;
+    background : var(--light-green);
+
+}
+
+.subBanner__right .btn {
+    font-size  : 15px;
+    display    : flex;
+    align-items: center;
+}
+
+/* end subBanner__wrap */
+
+/* footer */
+.footer {
+    margin-top: 40px;
+}
+
+.footer__top {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.footer__form {
+    display    : flex;
+    gap        : 16px;
+    align-items: center;
+}
+
+.footer__input {
+    padding         : 16px;
+    min-width       : 252px;
+    background-color: white;
+    border          : 1px solid var(--light-gray);
+    border-radius   : 8px;
+
+}
+
+.footer__formBtn {
+    background: transparent;
+    border    : none;
+    outline   : none;
+}
+
+.footer-total {
+    display    : flex;
+    align-items: center;
+    gap        : 32px;
+}
+
+.footer-total__item {
+    display    : flex;
+    align-items: center;
+    gap        : 6px;
+}
+
+.footer-total__numberWrap {
+    background     : #ececef;
+    border-radius  : 50%;
+    display        : flex;
+    align-items    : center;
+    width          : 50px;
+    height         : 50px;
+    justify-content: center;
+}
+
+.footer-total__number {
+    background     : #ffffff;
+    border-radius  : 50%;
+    display        : flex;
+    width          : 42px;
+    height         : 42px;
+    align-items    : center;
+    justify-content: center;
+    color          : var(--dark-primary);
+    font-weight    : 700;
+}
+
+.footer-total__text {
+    color    : var(--gray);
+    font-size: 14px;
+}
+
+.footer__body {
+    margin-top: 40px;
+    height    : 124px;
+}
+
+.footer__list {
+    display        : flex;
+    gap            : 52px;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    padding-bottom: 8px;
+    border-bottom : 1px solid var(--light-gray);
+}
+
+.footer__socialList {
+    margin-top: 8px;
+    display   : flex;
+    gap       : 22px;
+}
+
+.foterItem-title {
+    font-weight: 700;
+}
+
+.footerItem-desc__list {
+    display       : flex;
+    flex-direction: column;
+    gap           : 4px;
+}
+
+.footerItem-desc__item {
+    color: var(--gray);
+}
+
+.footer__bottom {
+    border-top : 1px solid var(--light-gray);
+    height     : 107px;
+    text-align : center;
+    padding-top: 40px;
+    color      : var(--gray);
+}
+
+
+/* end footer */
